@@ -1,0 +1,91 @@
+{% extends 'home/base.html' %}
+{% block content %}  
+{% load static %}     
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I'm <strong>Will Boyle!</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Developer</p>
+            <img src="{% static 'home/headshot.jpg' %}" alt="Picture of Will Smiling" class="intro__img">
+        </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Web/Cloud Development</h3>
+                    <p>I specialize in both web and cloud development. I'm proficient in the following langugages: Python, Java, HTML, CSS, and Javascript, as well as the Django and AWS. I have created websites using the Django framework. I have also deployed cloud solutions using AWS Lambda, S3, and Python to create an automatic database solution for my co-op placement.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Data Analysis</h3>
+                    <p>I specialiaze in Data Analysis using Python and SQL. I'm proficient with Pandas, BeautifulSoup4, OpenPyXL, Excel, as well as various database services. I have scraped data using these services, as well as developed an automatic web scraper to fill in missing data in a large databse at my Co-op placement.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Athletics</h3>
+                    <p>I have run competitive track and field since 8th grade. I primarily compete in distance events, ranging from the 800m to the 10000m. I've been competing at the collegiate level for the University of New Brunswick since 2020. To follow my running career, visit the "Athletics" tab.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Developer based out of Fredericton</p>
+
+            <div class="about-me__body">
+                <p>I'm a third-year Computer Science (BCS) student at the University of New Brunswick Fredericton. I'm currently working remotely for the Communications Research Centre Canada as a co-op student. I've been working for them for 3 co-op work terms, as well as one part-time work term while in school.
+                </p>
+                <p>I have strong professional experience with all things Python (including libraries such as Pandas and BS4), AWS, and Databases. Academically, I've worked with a wide variety of technologies, including Java, C and Git. Personally, I've created projects using Django, Unity, and the Raspberry Pi! I love to learn and tinker with different technologies.
+
+                </p>
+                <p>Alongside my tech passions, I also compete in Cross Country and Track at the collegiate level. I devote over 20 hours a week to the sport to make sure I perform to the best of my ability. If you're interested, the "athletics" tab has information on where I rank nationally in my events, as well as info on my training (by fetching data from the Strava API)!
+                </p>
+            </div>
+
+            <img src="{% static 'home/drinkingCoffee.jpg' %}" alt="Will doing something" class="about-me__img">
+        </section>
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">Some projects I've made :)</p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="{% url 'projectOne' %}" class="portfolio__item">
+                    <img src="{% static 'home/Square-Django-icon.png' %}" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="{% url 'projectTwo' %}" class="portfolio__item">
+                    <img src="{% static 'home/aws-logo-square.png' %}" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="{% url 'projectThree' %}" class="portfolio__item">
+                    <img src="{% static 'home/hignebst8rd41.webp' %}" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="{% url 'projectFour' %}" class="portfolio__item">
+                    <img src="{% static 'home/1_-ZQxCcXWY0nhQms2vZYDKQ.jpeg' %}" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="{% url 'projectFive' %}" class="portfolio__item">
+                    <img src="{% static 'home/Basic_3D_Shape_-_Cube_-_Red.png' %}" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="{% url 'projectSix' %}" class="portfolio__item">
+                    <img src="{% static 'home/channels4_profile.jpeg' %}" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+    
+{% endblock %}

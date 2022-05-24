@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% block content %}  
+{% load static %}  
+
+    <!-- Introduction -->
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        Unity <strong>Video Game</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">My first Game</p>
+    <img src="{% static 'home/Basic_3D_Shape_-_Cube_-_Red.png' %}" alt="" class="intro__img">
+</section>
+
+<div class="portfolio-item-individual">
+    <p>This was the second project I've ever made, which was made over the course of a week during my quarantine upon moving to Fredericton.</p>
+    <img src="{% static 'home/NvX0kU.jpeg' %}" alt="">
+    <p>Heavily inspired by the Brackey's video series, "How to Make a Video Game" I incorporated many of the concepts he used while also adding my own twists.
+        I learned a lot about the Unity Game Engine, C#, and Game Design while making this project which I really enjoyed. I even added my own "Infinite"
+        game mode which would create an endless version of the video game, similar to how many mobile games are designed nowadays.
+    </p>
+    <p>I really enjoyed making this project because I've always wanted to learn how to make a video game but I never had the opportunity to. 
+        Additionally, I loved being able to design my own levels and I got to familiarize myself with one of the most popular game engines
+        in the industry. <strong>If you would like to to download the game:  </strong> <a href="https://devwill.itch.io/cube-run">Click here</a>
+    </p>
+</div>
+        
+{% endblock %}

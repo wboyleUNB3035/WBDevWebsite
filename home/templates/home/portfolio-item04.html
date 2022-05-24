@@ -1,0 +1,31 @@
+{% extends 'home/base.html' %}
+{% block content %}  
+{% load static %}  
+
+    <!-- Introduction -->
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        Python <strong>Web Scraper</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Learning automation</p>
+    <img src="{% static 'home/1_-ZQxCcXWY0nhQms2vZYDKQ.jpeg' %}" alt="" class="intro__img">
+</section>
+
+<div class="portfolio-item-individual">
+    <p>For my second work term, I was assigned a web scraping project. Again, while the details cannot be specified, the project required
+        me to parse through an existing database, analyze what is missing, then to scrape data from various web pages to help fill in
+        missing data. This project was my first real experience with Data Analysis and Python web scraping.
+    </p>
+    <img src="{% static 'home/Oxylabs-images-05.jpeg' %}" alt="">
+    <p>This became my largest and most fulfilling project to date because of the heavy programming component. While I've enjoyed working with AWS and 
+        the cloud, I've always enjoyed programming and software development the most. I had to implement the good design principles that I learned about in
+        my software engineering classes since the scale of the project is so large, the program must be as efficient as possible.
+    </p>
+    <p>This project heavily involved working in Python and its libraries, including BeautifulSoup4 to scrape data from websites, TabulaPy to scrape data
+        from PDFs, and Pandas to handle and manipulate the data. Lastly, SQL is used to insert the missing data into the database. A large portion of development
+        time was spent on tailoring the web scraper to the various websites.
+    </p>
+    <p>I really enjoyed this project because it was the first professional project where I was able to solely focus on programming!</p>
+</div>
+
+{% endblock %}

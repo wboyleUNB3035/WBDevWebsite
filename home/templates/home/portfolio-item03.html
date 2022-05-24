@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% block content %}  
+{% load static %}    
+    <!-- Introduction -->
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        Group Java <strong>Application</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">First group project</p>
+    <img src="{% static 'home/hignebst8rd41.webp' %}" alt="" class="intro__img">
+</section>
+
+<div class="portfolio-item-individual">
+    <p>This was my first group project, which a part of my second-year Software Engineering class. Our objective was to create a Java application that would analyze
+        student transcripts and output various grade distributions.
+    </p>
+    <img src="{% static 'home/careerbuilder-original-2442.jpeg' %}" alt="">
+    <p>This involved using many new technologies, Java properties, and software engineering principles that I had been previously unaware of. For example, 
+        Git, abstract classes, interfaces, SOLID principles, UML, and more. Our group was able to implement these properties and principles effectively
+        to create a successful student transcript analyzer that could analyse Raw Distributions and Area Distributions (distributions averaged across different courses).
+    </p>
+    <p>Reflecting on this experience, I learned how to effectively work in a group by communicating frequently, scheduling weekly standups, and compromise when needed.
+        I'm happy that I was able to contribute significantly to a successful group project.
+    </p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'home/base.html' %}
+{% block content %}  
+{% load static %}     
+
+<!-- Introduction -->
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        Django <strong>Running Calculator</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">My first project</p>
+    <img src="{% static 'home/Square-Django-icon.png' %}" alt="" class="intro__img">
+</section>
+
+<div class="portfolio-item-individual">
+    <p>This was my very first major programming project I made! It was made using the Django web framework, Python, HTML, CSS, and Bootstrap. The website was made 
+        so I could calculate average running pace, convert flat 200m track times to banked 200m times, and predict a performance in one event given a time you ran in another event.
+        For example, you could estimate what you could run in the 1500m given your 800m time.
+    </p>
+    <img src="{% static 'home/runcalc.png' %}" alt="Run calculator home page">
+    <p>The website was created over the course of a couple weeks. The bulk of development time was spent gathering running conversions from the internet. This took awhile because I needed
+        to find reliable conversion sources, and then needed to keep track of conversions before using it in my code. Then, I needed to create the functions that would run these calculations. Funnily enough,
+        the Django and Python aspects of the project were the simplest for me, as I had self-taught myself Python and was very comfortable with it. I then stylized it up with HTML, CSS, and Bootstrap, which
+        took a good amount of time due to it being new to me.
+    </p>
+    <p>I learned <strong>a lot</strong> from this project. It taught me the software development lifecycle, web-frameworks, and basic web concepts. I was proud of applying what I learned about Django and web development
+        to solve a problem I encountered on a frequent basis. I frequently use this simple web-app to this day.</p>
+    <p><strong>If you want to check it out</strong> head to: <a href="https://willboyle.pythonanywhere.com">https://willboyle.pythonanywhere.com</a></p>
+    <img src="{% static 'home/pacecalc.png' %}" alt="Pace calculator demo">
+    <p>Some example calculators from the website.</p>
+    <img src="{% static 'home/trackcalc.png' %}" alt="Track calculator demo">
+</div>
+
+{% endblock %}

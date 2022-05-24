@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% block content %}  
+{% load static %}     
+<!-- Introduction -->
+    <section class="intro">
+    <h1 class="section__title section__title--intro">
+        AWS <strong>Cloud Solution</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">First professional project</p>
+    <img src="{% static 'home/aws-logo-square.png' %}" alt="" class="intro__img">
+</section>
+
+<div class="portfolio-item-individual">
+    <p>While the details cannot be specified, my first work term involved creating a native cloud solution for a legacy database.
+        To this point, I hadn't worked with AWS or Databases so I was able to learn about them independently. I was pleased that I was
+        able to get proficient knowledge in a short period of time.
+    </p>
+    <img src="{% static 'home/aws.jpeg' %}" alt="">
+    <p>I was able to create an automatic excel document extracter and uploader using Python, AWS Lambda, S3, and MySQL. This will help the organization automatically 
+        migrate critical information to the cloud in a quick and efficient matter. This involved many Python scripts that were run using AWS Lambda</p>
+    <p>I learned a lot about new technologies and myself from this project. This was the first time that I had to create something
+        where I could not easily find information on from the internet, which made me think critically and creatively about the design
+        and implementation of the solution. Furthermore, I learned that I am a person who can accomplish tasks independently.
+    </p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% block content %}  
+{% load static %}  
+
+    <!-- Introduction -->
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        Various<strong>RPi Projects</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Hardware Exploration</p>
+    <img src="{% static 'home/channels4_profile.jpeg' %}" alt="" class="intro__img">
+</section>
+
+<div class="portfolio-item-individual">
+    <p>Since I first purchased my Raspberry Pi 4 (and Arduino UNO!) back in May 2020, I've created multiple 
+        small-scale projects to explore the capabilities of the small microcomputer and electronics.
+    </p>
+    <img src="{% static 'home/PXL_20220209_022814920.jpg' %}" alt="">
+    <p>Some examples of my projects include the RetroPi, PiHole, Kali Linux Sandbox, and a live reptile terrarium camera. I've also tinkered with the Arduino
+        Uno to explore what can be possible with the small-but-mighty microcontroller. 
+    </p>
+    <p>I've really enjoyed tinkering with these these tiny computers because they've exposed me to a broader range of things
+        that are possible in the Computer Science world. And it's also just very fun to make short and sweet weekend projects :) 
+    </p>
+</div>
+        
+{% endblock %}
